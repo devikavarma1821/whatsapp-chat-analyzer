@@ -3,6 +3,8 @@ from wordcloud import WordCloud
 from collections import Counter
 import pandas as pd
 from emoji import EMOJI_DATA
+import os
+
 
 
 extract = URLExtract()
@@ -43,30 +45,39 @@ def most_busy_users(df):
 
 # ---------------------- WordCloud ----------------------
 def create_wordcloud(selected_user, df):
-    # load stopwords
-    with open(r"D:\Finalyearproject\stop_hinglish.txt", "r", encoding="utf-8") as f:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    stopwords_path = os.path.join(base_dir, "stop_hinglish.txt")
+
+    with open(stopwords_path, "r", encoding="utf-8") as f:
         stop_words = f.read()
 
     if selected_user != 'Overall':
         df = df[df['user'] == selected_user]
 
-    # remove group notifications and media messages
     temp = df[df['user'] != 'group_notification']
     temp = temp[temp['message'] != '<Media omitted>\n']
 
-    # join all messages
     text = " ".join(temp['message'])
 
-    # generate wordcloud
-    wc = WordCloud(width=500, height=500, min_font_size=10, background_color='white')
-    df_wc = wc.generate(text)
+    wc = WordCloud(
+        width=500,
+        height=500,
+        min_font_size=10,
+        background_color='white',
+        stopwords=set(stop_words.split())
+    )
 
+    df_wc = wc.generate(text)
     return df_wc
+
 
 
 # ---------------------- Most Common Words ----------------------
 def most_common_words(selected_user, df):
-    with open(r"D:\Finalyearproject\stop_hinglish.txt", "r", encoding="utf-8") as f:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    stopwords_path = os.path.join(base_dir, "stop_hinglish.txt")
+
+    with open(stopwords_path, "r", encoding="utf-8") as f:
         stop_words = f.read().split()
 
     if selected_user != 'Overall':
@@ -78,12 +89,12 @@ def most_common_words(selected_user, df):
     words = []
     for message in temp['message']:
         for word in message.lower().split():
-            if word not in stop_words and word != '<media' and word != 'omitted>':
+            if word not in stop_words and word not in ('<media', 'omitted>'):
                 words.append(word)
 
     most_common_df = pd.DataFrame(Counter(words).most_common(20))
-
     return most_common_df
+
 
 def emoji_helper(selected_user, df):
     if selected_user != 'Overall':
