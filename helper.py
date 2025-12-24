@@ -2,7 +2,8 @@ from urlextract import URLExtract
 from wordcloud import WordCloud
 from collections import Counter
 import pandas as pd
-import emoji
+from emoji import EMOJI_DATA
+
 
 extract = URLExtract()
 
@@ -91,7 +92,7 @@ def emoji_helper(selected_user, df):
     emojis = []
 
     for message in df['message']:
-        emojis.extend([c for c in message if emoji.is_emoji(c)])
+        emojis.extend([c for c in message if c in EMOJI_DATA])
 
     emoji_df = pd.DataFrame(
         Counter(emojis).most_common(),
@@ -99,6 +100,7 @@ def emoji_helper(selected_user, df):
     )
 
     return emoji_df
+
 
 def monthly_timeline(selected_user,df):
 
