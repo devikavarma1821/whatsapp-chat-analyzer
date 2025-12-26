@@ -54,7 +54,7 @@ The application transforms raw chat data into **clear statistics, interactive ch
 * Shows overall chat statistics such as total messages, words, and media
 * Provides a quick summary of the conversation
 
-![Chat Overview](images/screenshot1.png)
+![Chat Overview](images/photo1.png)
 
 ---
 
@@ -62,7 +62,7 @@ The application transforms raw chat data into **clear statistics, interactive ch
 * Displays activity of each participant
 * Helps identify the most active users
 
-![User Activity](images/screenshot2.png)
+![User Activity](images/photo2.png)
 
 ---
 
@@ -70,7 +70,7 @@ The application transforms raw chat data into **clear statistics, interactive ch
 * Visual representation of the most frequently used words
 * Larger words indicate higher frequency
 
-![Word Cloud](images/screenshot3.png)
+![Word Cloud](images/photo3.png)
 
 ---
 
@@ -78,7 +78,7 @@ The application transforms raw chat data into **clear statistics, interactive ch
 * Shows number of images, videos, audio, and documents shared
 * Useful for media behavior analysis
 
-![Media Analysis](images/screenshot4.png)
+![Media Analysis](images/photo4.png)
 
 ---
 
@@ -86,7 +86,7 @@ The application transforms raw chat data into **clear statistics, interactive ch
 * Highlights the most commonly used emojis
 * Helps analyze emotions and reactions
 
-![Emoji Analysis](images/screenshot5.png)
+![Emoji Analysis](images/photo5.png)
 
 ---
 
@@ -94,7 +94,7 @@ The application transforms raw chat data into **clear statistics, interactive ch
 * Visualizes chat activity over days and months
 * Identifies peak communication periods
 
-![Message Timeline](images/screenshot6.png)
+![Message Timeline](images/photo6.png)
 
 ---
 
@@ -102,7 +102,7 @@ The application transforms raw chat data into **clear statistics, interactive ch
 * Shows exported CSV or PDF report
 * Enables offline analysis
 
-![Exported Report](images/screenshot7.png)
+![Exported Report](images/photo7.png)
 
 ---
 
