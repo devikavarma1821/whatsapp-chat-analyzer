@@ -1,115 +1,143 @@
-📊 WhatsApp Chat Analyzer
+# 📊 WhatsApp Chat Analyzer
 
-🔗 Live Demo: https://whatsapp-chat-analyzer-x50o.onrender.com
+🔗 **Live Demo:**  
+https://whatsapp-chat-analyzer-x50o.onrender.com
 
-WhatsApp Chat Analyzer is a Python-based data analysis and visualization tool that helps users gain meaningful insights from exported WhatsApp chat files (.txt).
-It transforms raw chat data into clear statistics, charts, and visual reports that reveal communication patterns, trends, and user behavior.
+WhatsApp Chat Analyzer is a **Python-based data analysis and visualization web application** that helps users extract meaningful insights from exported WhatsApp chat files (`.txt` format).
 
-This project demonstrates practical skills in data analysis, visualization, and web app development using Python.
+The application transforms raw chat data into **clear statistics, interactive charts, and visual reports**, making it easy to understand communication patterns and trends.
 
-🚀 Features
+---
 
-Chat Statistics
-View total messages, words, media files, and links shared.
+## 🚀 Key Features
 
-User Activity Analysis
-Identify the most active users and analyze their messaging patterns.
+* **Chat Statistics**
+  * Total messages, words, media files, and links shared
 
-Word Cloud Generation
-Visualize the most frequently used words in the chat.
+* **User Activity Analysis**
+  * Identifies the most active participants
+  * Shows messaging patterns over time
 
-Media Analysis
-Count and categorize images, videos, audio files, and documents.
+* **Word Cloud Generation**
+  * Visual representation of frequently used words
 
-Emoji Analysis
-Discover the most commonly used emojis to understand emotions and reactions.
+* **Media Analysis**
+  * Counts images, videos, audio, and documents
 
-Message Timeline
-Analyze chat activity trends by day, week, and month.
+* **Emoji Analysis**
+  * Highlights commonly used emojis
 
-Export Reports
-Download insights and statistics in CSV or PDF format.
+* **Message Timeline**
+  * Daily and monthly activity trends
 
-Interactive Streamlit Interface
-Simple and user-friendly web dashboard for dynamic visualization.
+* **Export Reports**
+  * Export insights as CSV or PDF
 
-🛠️ Technologies Used
+* **Interactive Streamlit Dashboard**
+  * Simple and user-friendly interface
 
-Python – Core programming language
+---
 
-Streamlit – Interactive web application framework
+## 🛠️ Technologies Used
 
-Pandas & NumPy – Data cleaning and analysis
+* Python
+* Streamlit
+* Pandas & NumPy
+* Matplotlib & Seaborn
+* WordCloud
 
-Matplotlib & Seaborn – Data visualization
+---
 
-WordCloud – Word cloud generation
+## 📸 Screenshots
 
-📸 Screenshots
-Screenshot 1: Chat Overview
+### 🔹 Screenshot 1: Chat Overview
+* Shows overall chat statistics such as total messages, words, and media
+* Provides a quick summary of the conversation
 
-Shows overall chat statistics such as total messages, words, and media.
-images/screenshot1.png
+![Chat Overview](images/screenshot1.png)
 
-Screenshot 2: User Activity
+---
 
-Displays participant-wise activity over time.
-images/screenshot2.png
+### 🔹 Screenshot 2: User Activity Analysis
+* Displays activity of each participant
+* Helps identify the most active users
 
-Screenshot 3: Word Cloud
+![User Activity](images/screenshot2.png)
 
-Visual representation of the most frequently used words.
-images/screenshot3.png
+---
 
-Screenshot 4: Media Analysis
+### 🔹 Screenshot 3: Word Cloud
+* Visual representation of the most frequently used words
+* Larger words indicate higher frequency
 
-Shows counts of images, videos, and other media types.
-images/screenshot4.png
+![Word Cloud](images/screenshot3.png)
 
-Screenshot 5: Emoji Analysis
+---
 
-Highlights the most used emojis in the chat.
-images/screenshot5.png
+### 🔹 Screenshot 4: Media Analysis
+* Shows number of images, videos, audio, and documents shared
+* Useful for media behavior analysis
 
-Screenshot 6: Message Timeline
+![Media Analysis](images/screenshot4.png)
 
-Visualizes daily and monthly chat activity trends.
-images/screenshot6.png
+---
 
-Screenshot 7: Exported Report
+### 🔹 Screenshot 5: Emoji Analysis
+* Highlights the most commonly used emojis
+* Helps analyze emotions and reactions
 
-Preview of generated CSV or PDF reports.
-images/screenshot7.png
+![Emoji Analysis](images/screenshot5.png)
 
-📂 How to Use
+---
 
-Export a WhatsApp chat as a .txt file (without media).
+### 🔹 Screenshot 6: Message Timeline
+* Visualizes chat activity over days and months
+* Identifies peak communication periods
 
-Open the live demo or run the app locally.
+![Message Timeline](images/screenshot6.png)
 
-Upload the chat file.
+---
 
-Explore statistics, charts, and insights instantly.
+### 🔹 Screenshot 7: Exported Report
+* Shows exported CSV or PDF report
+* Enables offline analysis
 
-Export reports if needed.
+![Exported Report](images/screenshot7.png)
 
-🎯 Use Cases
+---
 
-Personal chat analysis
+## 📂 How to Use
 
-Communication behavior study
+* Export a WhatsApp chat as a `.txt` file (without media)
+* Open the live demo or run the app locally
+* Upload the chat file
+* Explore insights and visualizations
+* Export reports if needed
 
-Academic or mini-project demonstrations
+---
 
-Data analysis and visualization practice
+## 🎯 Use Cases
 
-📌 Project Status
+* Personal and group chat analysis
+* Communication pattern studies
+* Academic mini-project or final-year project
+* Data analysis and visualization practice
 
-✅ Functional and deployed
+---
 
-🔄 Open for improvements and enhancements
+## 📌 Project Status
 
-👩‍💻 Author
+* ✅ Fully functional
+* ✅ Deployed with Streamlit
+* 🔄 Open for enhancements
 
-Devika Varma
-Python | Data Analysis | Machine Learning Enthusiast
+---
+
+## 👩‍💻 Author
+
+**Devika Varma**  
+Python Developer | Data Analysis | Machine Learning Enthusiast
+
+---
+
+⭐ If you like this project, give it a **star** on GitHub!
